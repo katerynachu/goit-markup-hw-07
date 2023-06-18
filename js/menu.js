@@ -9,7 +9,7 @@
   refs.closeMenuBtn.addEventListener("click", toggleMenu);
 
   function toggleMenu() {
-      refs.menu.classList.toggle("is-hidden");
+      refs.menu.classList.toggle("none");
       document.body.classList.toggle('no-scroll')
   }
 })();

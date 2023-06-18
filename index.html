@@ -22,35 +22,101 @@
   </head>
   <body>
     <header class="header">
-      <div class="container wrapper space">
-        <nav class="menu-nav">
-          <a class="header_logo logo link" href="./index.html"
-            >Web<span class="header_decor-logo">Studio</span></a
+      <div class="container wrapper">
+        <a class="header_logo logo link" href="./index.html"
+          >Web<span class="header_decor-logo">Studio</span></a
+        >
+
+        <div class="mobile-menu none" data-menu>
+          <button
+            class="burger-menu_close-icon default-btn"
+            type="button"
+            data-menu-close
           >
-          <ul class="menu list wrapper">
-            <li>
-              <a class="menu_link link current" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="menu_link link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li><a class="menu_link link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="contacts">
-          <ul class="list wrapper contacts-list">
-            <li>
-              <a class="contacts_link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contacts_link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <ul class="menu list">
+              <li>
+                <a class="menu_link link current" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="menu_link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li><a class="menu_link link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <div>
+            <address class="contacts">
+              <ul class="list contacts-list">
+                <li>
+                  <a class="contacts_link link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="contacts_link contacts_link-number link"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="footer_social list">
+              <li class="footer_social-item">
+                <a
+                  class="footer_social-link social-link link"
+                  href="https://www.instagram.com/"
+                >
+                  <svg width="24" height="24" class="footer_social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="footer_social-item">
+                <a
+                  class="footer_social-link social-link link"
+                  href="https://twitter.com/"
+                >
+                  <svg width="24" height="24" class="footer_social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="footer_social-item">
+                <a
+                  class="footer_social-link social-link link"
+                  href="https://www.facebook.com/"
+                >
+                  <svg width="24" height="24" class="footer_social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer_social-item">
+                <a
+                  class="footer_social-link social-link link"
+                  href="https://www.linkedin.com/"
+                >
+                  <svg width="24" height="24" class="footer_social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="burger-menu">
+          <button
+            class="burger-menu_icon default-btn"
+            type="button"
+            data-menu-open
+          >
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -65,14 +131,14 @@
       <section class="advatages">
         <div class="container">
           <h2 hidden class="title">Advatages</h2>
-          <ul class="advatages_list list wrapper">
+          <ul class="advatages_list list">
             <li class="advatages_item">
               <div class="advatages_image">
                 <svg width="64" height="64" class="advatages_image-svg">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advatages_subtitle subtitle">Strategy</h3>
+              <h3 class="advatages_subtitle">Strategy</h3>
               <p class="advatages_description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -149,9 +215,9 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team_title title">Our Team</h2>
-          <ul class="team_list list wrapper">
+          <ul class="team_list list">
             <li class="team_item">
               <img
                 srcset="./images/team-img1@2x.jpg 2x"
@@ -375,7 +441,7 @@
         </div>
       </section>
       <section class="customers">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="customers_title title">Customers</h2>
           <ul class="customers_logo list">
             <li class="customers_logo-item">
@@ -424,7 +490,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container wrapper footer-wrapper">
+      <div class="container footer-container">
         <div class="footer_content">
           <a class="footer_logo logo link" href="./index.html"
             >Web<span class="logo_decor">Studio</span></a
