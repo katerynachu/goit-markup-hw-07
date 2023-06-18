@@ -181,6 +181,10 @@ transform: translateX(0);
         .burger-menu_icon{
             display: none;
         }
+           .mobile-menu.none {
+               transform: translateX(0);
+    
+           }
 }
 @media screen and (min-width: 1158px) {
 .mobile-menu{
